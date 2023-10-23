@@ -1,0 +1,5 @@
+.bodybg{
+    -fx-background-image: url("cardd.png");
+
+    -fx-background-repeat: NO_REPEAT;
+}

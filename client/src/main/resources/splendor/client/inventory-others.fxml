@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="371.0" style="-fx-background-color: grey; -fx-border-color: black; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="splendor.client.PlayerOthersController">
+  <children>
+    <AnchorPane prefHeight="1080.0" prefWidth="371.0">
+      <children>
+        <AnchorPane layoutX="14.0" layoutY="74.0" prefHeight="580.0" prefWidth="210.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+          <children>
+            <VBox prefHeight="206.0" prefWidth="210.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <VBox prefHeight="100.0" prefWidth="272.0">
+                  <children>
+                    <HBox prefHeight="70.0" prefWidth="272.0">
+                      <children>
+                        <AnchorPane prefHeight="80.0" prefWidth="370.0">
+                          <children>
+                            <Label fx:id="player2NameLabel" alignment="CENTER" style="-fx-background-color: White; -fx-border-color: Black; -fx-border-width: 2;" text="Player 2" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                              <font>
+                                <Font size="24.0" />
+                              </font>
+                            </Label>
+                          </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                          <children>
+                            <Label fx:id="player2PointsLabel" alignment="CENTER" style="-fx-background-color: White; -fx-border-color: Black; -fx-border-width: 2;" text="0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0">
+                              <font>
+                                <Font size="24.0" />
+                              </font>
+                            </Label>
+                          </children>
+                        </AnchorPane>
+                      </children>
+                    </HBox>
+                    <HBox alignment="CENTER" prefHeight="23.0" prefWidth="272.0">
+                      <children>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                          <HBox.margin>
+                            <Insets />
+                          </HBox.margin>
+                          <image>
+                            <Image url="@../../Assets/Tokens/BrownCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player2BlackTokenAmount" alignment="CENTER" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/BlueCoin-modified.png" />
+                          </image></ImageView>
+                        <Label fx:id="player2BlueTokenAmount" alignment="CENTER" layoutX="32.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="44.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/GreenCoin-modified.png" />
+                          </image></ImageView>
+                        <Label fx:id="player2GreenTokenAmount" alignment="CENTER" layoutX="67.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="79.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/RedCoin-modified.png" />
+                          </image></ImageView>
+                        <Label fx:id="player2RedTokenAmount" alignment="CENTER" layoutX="101.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="113.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/WhiteCoin-modified.png" />
+                          </image></ImageView>
+                        <Label fx:id="player2WhiteTokenAmount" alignment="CENTER" layoutX="136.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="148.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/GoldCoin-modified.png" />
+                          </image></ImageView>
+                        <Label fx:id="player2GoldTokenAmount" alignment="CENTER" layoutX="170.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                      </children></HBox>
+                    <HBox alignment="CENTER" layoutX="10.0" layoutY="90.0" prefHeight="23.0" prefWidth="272.0">
+                      <children>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                          <HBox.margin>
+                            <Insets />
+                          </HBox.margin>
+                          <image>
+                            <Image url="@../../Assets/Tokens/BrownCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player2BlackBonusAmount" alignment="CENTER" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/BlueCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player2BlueBonusAmount" alignment="CENTER" layoutX="32.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="44.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/GreenCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player2GreenBonusAmount" alignment="CENTER" layoutX="67.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="79.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/RedCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player2RedBonusAmount" alignment="CENTER" layoutX="101.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="113.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/WhiteCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player2WhiteBonusAmount" alignment="CENTER" layoutX="136.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                      </children>
+                    </HBox>
+                  </children>
+                </VBox>
+                <AnchorPane prefHeight="40.0" prefWidth="200.0">
+                  <children>
+                    <Label alignment="CENTER" style="-fx-background-color: white; -fx-border-width: 2; -fx-border-color: black;" text="Reserved Cards" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="10.0">
+                      <font>
+                        <Font size="20.0" />
+                      </font>
+                    </Label>
+                  </children>
+                </AnchorPane>
+                <HBox prefHeight="132.0" prefWidth="200.0">
+                  <children>
+                    <ImageView fx:id="p2Reserved1" fitHeight="132.0" fitWidth="90.0" image="${controller.imageP2Reserved1}" pickOnBounds="true" preserveRatio="true" />
+                    <ImageView fx:id="p2Reserved2" fitHeight="132.0" fitWidth="90.0" image="${controller.imageP2Reserved2}" pickOnBounds="true" preserveRatio="true" />
+                    <ImageView fx:id="p2Reserved3" fitHeight="132.0" fitWidth="90.0" image="${controller.imageP2Reserved3}" pickOnBounds="true" preserveRatio="true" />
+                  </children>
+                  <padding>
+                    <Insets top="10.0" />
+                  </padding>
+                </HBox>
+                <VBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="272.0">
+                  <children>
+                    <HBox prefHeight="70.0" prefWidth="272.0">
+                      <children>
+                        <AnchorPane prefHeight="80.0" prefWidth="370.0">
+                          <children>
+                            <Label fx:id="player3NameLabel" alignment="CENTER" style="-fx-background-color: White; -fx-border-color: Black; -fx-border-width: 2;" text="Player 3" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                              <font>
+                                <Font size="24.0" />
+                              </font>
+                            </Label>
+                          </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                          <children>
+                            <Label fx:id="player3PointsLabel" alignment="CENTER" style="-fx-background-color: White; -fx-border-color: Black; -fx-border-width: 2;" text="0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0">
+                              <font>
+                                <Font size="24.0" />
+                              </font>
+                            </Label>
+                          </children>
+                        </AnchorPane>
+                      </children>
+                    </HBox>
+                    <HBox alignment="CENTER" prefHeight="23.0" prefWidth="272.0">
+                      <children>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                          <HBox.margin>
+                            <Insets />
+                          </HBox.margin>
+                          <image>
+                            <Image url="@../../Assets/Tokens/BrownCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player3BlackTokenAmount" alignment="CENTER" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/BlueCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player3BlueTokenAmount" alignment="CENTER" layoutX="32.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="44.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/GreenCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player3GreenTokenAmount" alignment="CENTER" layoutX="67.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="79.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/RedCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player3RedTokenAmount" alignment="CENTER" layoutX="101.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="113.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/WhiteCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player3WhiteTokenAmount" alignment="CENTER" layoutX="136.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="148.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/GoldCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player3GoldTokenAmount" alignment="CENTER" layoutX="170.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                      </children>
+                    </HBox>
+                    <HBox alignment="CENTER" layoutX="10.0" layoutY="90.0" prefHeight="23.0" prefWidth="272.0">
+                      <children>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                          <HBox.margin>
+                            <Insets />
+                          </HBox.margin>
+                          <image>
+                            <Image url="@../../Assets/Tokens/BrownCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player3BlackBonusAmount" alignment="CENTER" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/BlueCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player3BlueBonusAmount" alignment="CENTER" layoutX="32.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="44.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/GreenCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player3GreenBonusAmount" alignment="CENTER" layoutX="67.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="79.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/RedCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player3RedBonusAmount" alignment="CENTER" layoutX="101.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="113.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/WhiteCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player3WhiteBonusAmount" alignment="CENTER" layoutX="136.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                      </children>
+                    </HBox>
+                    <AnchorPane prefHeight="40.0" prefWidth="200.0">
+                      <children>
+                        <Label alignment="CENTER" style="-fx-background-color: white; -fx-border-width: 2; -fx-border-color: black;" text="Reserved Cards" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="10.0">
+                          <font>
+                            <Font size="20.0" />
+                          </font>
+                        </Label>
+                      </children>
+                    </AnchorPane>
+                  </children>
+                </VBox>
+                <HBox layoutX="10.0" layoutY="112.0" prefHeight="132.0" prefWidth="200.0">
+                  <children>
+                    <ImageView fx:id="p3Reserved1" fitHeight="132.0" fitWidth="90.0" image="${controller.imageP3Reserved1}" pickOnBounds="true" preserveRatio="true" />
+                    <ImageView fx:id="p3Reserved2" fitHeight="132.0" fitWidth="90.0" image="${controller.imageP3Reserved2}" pickOnBounds="true" preserveRatio="true" />
+                    <ImageView fx:id="p3Reserved3" fitHeight="132.0" fitWidth="90.0" image="${controller.imageP3Reserved3}" pickOnBounds="true" preserveRatio="true" />
+                  </children>
+                  <padding>
+                    <Insets top="10.0" />
+                  </padding>
+                </HBox>
+                <VBox layoutX="10.0" layoutY="249.0" prefHeight="100.0" prefWidth="272.0">
+                  <children>
+                    <HBox prefHeight="70.0" prefWidth="272.0">
+                      <children>
+                        <AnchorPane prefHeight="80.0" prefWidth="370.0">
+                          <children>
+                            <Label fx:id="player4NameLabel" alignment="CENTER" style="-fx-background-color: White; -fx-border-color: Black; -fx-border-width: 2;" text="Player 4" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                              <font>
+                                <Font size="24.0" />
+                              </font>
+                            </Label>
+                          </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                          <children>
+                            <Label fx:id="player4PointsLabel" alignment="CENTER" style="-fx-background-color: White; -fx-border-color: Black; -fx-border-width: 2;" text="0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0">
+                              <font>
+                                <Font size="24.0" />
+                              </font>
+                            </Label>
+                          </children>
+                        </AnchorPane>
+                      </children>
+                    </HBox>
+                    <HBox alignment="CENTER" prefHeight="23.0" prefWidth="272.0">
+                      <children>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                          <HBox.margin>
+                            <Insets />
+                          </HBox.margin>
+                          <image>
+                            <Image url="@../../Assets/Tokens/BrownCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player4BlackTokenAmount" alignment="CENTER" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/BlueCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player4BlueTokenAmount" alignment="CENTER" layoutX="32.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="44.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/GreenCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player4GreenTokenAmount" alignment="CENTER" layoutX="67.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="79.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/RedCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player4RedTokenAmount" alignment="CENTER" layoutX="101.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="113.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/WhiteCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player4WhiteTokenAmount" alignment="CENTER" layoutX="136.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="148.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/GoldCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player4GoldTokenAmount" alignment="CENTER" layoutX="170.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                      </children>
+                    </HBox>
+                    <HBox alignment="CENTER" layoutX="10.0" layoutY="90.0" prefHeight="23.0" prefWidth="272.0">
+                      <children>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                          <HBox.margin>
+                            <Insets />
+                          </HBox.margin>
+                          <image>
+                            <Image url="@../../Assets/Tokens/BrownCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player4BlackBonusAmount" alignment="CENTER" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/BlueCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player4BlueBonusAmount" alignment="CENTER" layoutX="32.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="44.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/GreenCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player4GreenBonusAmount" alignment="CENTER" layoutX="67.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="79.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/RedCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player4RedBonusAmount" alignment="CENTER" layoutX="101.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="113.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../../Assets/Tokens/WhiteCoin-modified.png" />
+                          </image>
+                        </ImageView>
+                        <Label fx:id="player4WhiteBonusAmount" alignment="CENTER" layoutX="136.0" layoutY="10.0" text="0">
+                          <padding>
+                            <Insets left="2.0" right="2.0" top="2.0" />
+                          </padding>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                        </Label>
+                      </children>
+                    </HBox>
+                    <AnchorPane prefHeight="40.0" prefWidth="200.0">
+                      <children>
+                        <Label alignment="CENTER" style="-fx-background-color: white; -fx-border-width: 2; -fx-border-color: black;" text="Reserved Cards" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="10.0">
+                          <font>
+                            <Font size="20.0" />
+                          </font>
+                        </Label>
+                      </children>
+                    </AnchorPane>
+                    <HBox prefHeight="132.0" prefWidth="200.0">
+                      <children>
+                        <ImageView fx:id="p4Reserved1" fitHeight="132.0" fitWidth="90.0" image="${controller.imageP4Reserved1}" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="p4Reserved2" fitHeight="132.0" fitWidth="90.0" image="${controller.imageP4Reserved2}" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="p4Reserved3" fitHeight="132.0" fitWidth="90.0" image="${controller.imageP4Reserved3}" pickOnBounds="true" preserveRatio="true" />
+                      </children>
+                      <padding>
+                        <Insets top="10.0" />
+                      </padding>
+                    </HBox>
+                  </children>
+                </VBox>
+              </children>
+            </VBox>
+          </children>
+        </AnchorPane>
+      </children>
+    </AnchorPane>
+  </children>
+</Pane>

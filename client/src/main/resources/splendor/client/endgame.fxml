@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="splendor.client.EndGameController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../../Assets/whiteBackground.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="379.0" fitWidth="580.0" layoutX="14.0" layoutY="12.0" opacity="0.43">
+         <image>
+            <Image url="@../../Assets/endGameImage.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="264.0" layoutY="335.0" mnemonicParsing="false" onAction="#onQuitClick" text="Quit">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Text layoutX="217.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="won the game!" wrappingWidth="298.947265625">
+         <font>
+            <Font size="25.0" />
+         </font></Text>
+      <Label fx:id="label" layoutX="256.0" layoutY="144.0" prefHeight="64.0" prefWidth="88.0" text="LABEL">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

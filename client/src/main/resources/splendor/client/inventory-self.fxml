@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.Button?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="371.0" style="-fx-background-color: grey; -fx-border-color: black; -fx-border-width: 0 2 0 2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="splendor.client.InventorySelfController">
+   <children>
+      <AnchorPane prefHeight="780.0" prefWidth="371.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="10.0" prefHeight="755.0" prefWidth="341.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <VBox prefHeight="753.0" prefWidth="341.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox fx:id="playerSelfTokens" alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Assets/Tokens/WhiteCoin-modified.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Assets/Tokens/BlueCoin-modified.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Assets/Tokens/GreenCoin-modified.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Assets/Tokens/RedCoin-modified.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Assets/Tokens/BrownCoin-modified.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Assets/Tokens/GoldCoin-modified.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label fx:id="player1WhiteTokenAmount" alignment="CENTER" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="player1BlueTokenAmount" alignment="CENTER" layoutX="166.0" layoutY="10.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="player1GreenTokenAmount" alignment="CENTER" layoutX="132.0" layoutY="10.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="player1RedTokenAmount" alignment="CENTER" layoutX="99.0" layoutY="10.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="player1BlackTokenAmount" alignment="CENTER" layoutX="65.0" layoutY="10.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="player1GoldTokenAmount" alignment="CENTER" layoutX="99.0" layoutY="10.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label fx:id="player1WhiteTokenUsed" alignment="CENTER" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" style="-fx-text-fill: red;" text="0" visible="false">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="player1BlueTokenUsed" alignment="CENTER" layoutX="166.0" layoutY="10.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" style="-fx-text-fill: red;" text="0" visible="false">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="player1GreenTokenUsed" alignment="CENTER" layoutX="141.0" layoutY="10.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" style="-fx-text-fill: red;" text="0" visible="false">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="player1RedTokenUsed" alignment="CENTER" layoutX="116.0" layoutY="10.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" style="-fx-text-fill: red;" text="0" visible="false">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="player1BlackTokenUsed" alignment="CENTER" layoutX="91.0" layoutY="10.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" style="-fx-text-fill: red;" text="0" visible="false">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="player1GoldTokenUsed" alignment="CENTER" layoutX="66.0" layoutY="10.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" style="-fx-text-fill: red;" text="0" visible="false">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane maxHeight="5.0" minHeight="5.0" prefHeight="5.0" prefWidth="200.0" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="341.0" style="-fx-background-color: white; -fx-border-width: 2; -fx-border-color: black;" text="Owned Cards">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="10.0" layoutY="645.0" maxHeight="5.0" minHeight="5.0" prefHeight="5.0" prefWidth="200.0" />
+                        <HBox layoutX="10.0" layoutY="538.0" prefHeight="88.0" prefWidth="200.0" style="-fx-background-color: gray;">
+                           <children>
+                              <ImageView fx:id="ownedCard1" fitHeight="88.0" fitWidth="60.0" image="${controller.imageOwned1}" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard2" fitHeight="88.0" fitWidth="60.0" image="${controller.imageOwned2}" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard3" fitHeight="88.0" fitWidth="60.0" image="${controller.imageOwned3}" layoutX="100.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard4" fitHeight="88.0" fitWidth="60.0" image="${controller.imageOwned4}" layoutX="130.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard5" fitHeight="88.0" fitWidth="60.0" image="${controller.imageOwned5}" layoutX="190.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="88.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="ownedCard6" fitHeight="88.0" fitWidth="60.0" image="${controller.imageOwned6}" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard7" fitHeight="88.0" fitWidth="60.0" image="${controller.imageOwned7}" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard8" fitHeight="88.0" fitWidth="60.0" image="${controller.imageOwned8}" layoutX="100.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard9" fitHeight="88.0" fitWidth="60.0" image="${controller.imageOwned9}" layoutX="130.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard10" fitHeight="88.0" fitWidth="60.0" image="${controller.imageOwned10}" layoutX="190.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="266.0" prefHeight="88.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="ownedCard11" fitHeight="88.0" fitWidth="60.0" image="${controller.imageOwned11}" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard12" fitHeight="88.0" fitWidth="60.0" image="${controller.imageOwned12}" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard13" fitHeight="88.0" fitWidth="60.0" layoutX="100.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard14" fitHeight="88.0" fitWidth="60.0" layoutX="130.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard15" fitHeight="88.0" fitWidth="60.0" layoutX="190.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="483.0" prefHeight="88.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="ownedCard16" fitHeight="88.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard17" fitHeight="88.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard18" fitHeight="88.0" fitWidth="60.0" layoutX="100.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard19" fitHeight="88.0" fitWidth="60.0" layoutX="130.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ownedCard20" fitHeight="88.0" fitWidth="60.0" layoutX="190.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="20.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="24.0" prefWidth="341.0" style="-fx-background-color: white; -fx-border-width: 2; -fx-border-color: black;" text="Owned Nobles">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="24.0" prefWidth="341.0" style="-fx-background-color: white; -fx-border-width: 2; -fx-border-color: black;" text="Reserved Nobles">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane maxHeight="5.0" minHeight="5.0" prefHeight="5.0" prefWidth="200.0" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="player1OwnedNoble1" fitHeight="80.0" fitWidth="80.0" image="${controller.imageOwnedNoble1}" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="player1OwnedNoble2" fitHeight="80.0" fitWidth="80.0" image="${controller.imageOwnedNoble2}" pickOnBounds="true" preserveRatio="true" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" />
+                              <ImageView fx:id="player1ReservedNoble1" fitHeight="80.0" fitWidth="80.0" image="${controller.imageReservedNoble1}" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="player1ReservedNoble2" fitHeight="80.0" fitWidth="80.0" image="${controller.imageReservedNoble2}" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="341.0" style="-fx-background-color: white; -fx-border-width: 2; -fx-border-color: black;" text="Reserved Cards">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane maxHeight="5.0" minHeight="5.0" prefHeight="5.0" prefWidth="200.0" />
+                        <HBox layoutX="10.0" layoutY="506.0" prefHeight="88.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="buttonReservedCard1" mnemonicParsing="false" prefHeight="88.0" prefWidth="60.0">
+                                 <graphic>
+                                    <ImageView fx:id="reservedCard1" fitHeight="88.0" fitWidth="60.0" image="${controller.imageReserved1}" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="buttonReservedCard2" mnemonicParsing="false" prefHeight="88.0" prefWidth="60.0">
+                                 <graphic>
+                                    <ImageView fx:id="reservedCard2" fitHeight="88.0" fitWidth="60.0" image="${controller.imageReserved2}" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="buttonReservedCard3" mnemonicParsing="false" prefHeight="88.0" prefWidth="60.0">
+                                 <graphic>
+                                    <ImageView fx:id="reservedCard3" fitHeight="88.0" fitWidth="60.0" image="${controller.imageReserved3}" layoutX="100.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

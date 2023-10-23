@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="splendor.client.GameController">
+<HBox>
+   <children>
+
+       <Pane><fx:include fx:id="playerSelfPane" source="player-self.fxml" HBox.hgrow="NEVER" /> </Pane>
+       <Pane><fx:include fx:id="boardPane" source="gameboard-view.fxml" HBox.hgrow="NEVER" /> </Pane>
+       <Pane><fx:include fx:id="playerOthersPane" source="inventory-others.fxml" HBox.hgrow="NEVER" /> </Pane>
+
+
+   </children>
+</HBox>
+    <AnchorPane fx:id="cardAnchorPane" visible="false"><fx:include fx:id="cardPopUp" layoutX="783.0" layoutY="215.0" prefHeight="650.0" prefWidth="354.0" source="card.fxml" /></AnchorPane>
+    <AnchorPane fx:id="reservedCardAnchorPane" visible="false"><fx:include fx:id="reservedCardPopUp" layoutX="783.0" layoutY="215.0" prefHeight="650.0" prefWidth="354.0" source="reservedCard.fxml" /></AnchorPane>
+    <AnchorPane fx:id="endAnchorPane" visible="false"><fx:include fx:id="endgame" layoutX="783.0" layoutY="215.0" prefHeight="823.0" prefWidth="450.0" source="endgame.fxml" /></AnchorPane>
+
+</AnchorPane>
